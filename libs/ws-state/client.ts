@@ -7,7 +7,7 @@ export class WsStateClient extends EventEmitter {
 
   constructor(port: number) {
     super()
-    this.#socket = io('ws://127.0.0.1:' + port)
+    this.#socket = io('wss://beat-my-bot.joru.me:' + port)
 
     this.#socket.on('update', newState => {
       this.#state = newState

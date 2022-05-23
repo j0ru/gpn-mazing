@@ -29,7 +29,7 @@ export class WsStateServer<StateType> {
     }) as unknown as StateType
 
     setTimeout(() => {
-      this.#server.listen(port, '127.0.0.1')
+      this.#server.listen(port, '0.0.0.0')
     }, 1)
   }
 
