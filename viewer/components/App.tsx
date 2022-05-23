@@ -2,6 +2,7 @@ import React from 'react'
 import { useGame } from '../providers/Game'
 import { Scoreboard } from './Scoreboard'
 import { Game } from './Game'
+import './App.css'
 
 export function App() {
   const { serverInfoList, lastWinners } = useGame()
